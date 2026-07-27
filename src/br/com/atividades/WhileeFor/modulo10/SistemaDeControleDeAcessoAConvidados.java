@@ -10,7 +10,6 @@ public class SistemaDeControleDeAcessoAConvidados {
         Scanner input = new Scanner(System.in);
         List<String> listaMembros = new ArrayList<>();
 
-
         while(true){
 
             System.out.println("Digite o nome do convidado (ou 'ver' para visualizar a lista, 'sair' para terminar)");
@@ -21,6 +20,11 @@ public class SistemaDeControleDeAcessoAConvidados {
             }else if(nome.equals("ver")){
                 System.out.println(listaMembros);
                 continue;
+            }
+            if (listaMembros.contains(nome)){
+                System.out.println("nome ja existe");
+                continue;
+
             }
 
             listaMembros.add(nome);
