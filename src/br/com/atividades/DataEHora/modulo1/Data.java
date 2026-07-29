@@ -54,7 +54,7 @@ public class Data {
 
         //Verificaçao para datas
 
-        LocalDate dataPagamento = LocalDate.parse("2026-10-30");
+        LocalDate dataPagamento = LocalDate.parse("2026-10-20");
         Period period = Period.between(dataCompra, dataPagamento);
 
         System.out.println("Faltam " + period.getDays() + " dias" + " e " + period.getMonths() + " meses ");
