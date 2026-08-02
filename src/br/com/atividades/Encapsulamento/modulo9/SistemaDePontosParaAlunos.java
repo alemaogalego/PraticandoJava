@@ -6,7 +6,7 @@ public class SistemaDePontosParaAlunos {
         Aluno aluno1 = new Aluno("João");
         Aluno aluno2 = new Aluno("Maria");
 
-        aluno1.ganharPontos(100);
+        aluno1.ganharPontos(1000);
         aluno2.ganharPontos(99);
 
 
